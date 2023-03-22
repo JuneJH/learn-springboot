@@ -1,9 +1,23 @@
 package com.june.pojo;
 
+import org.springframework.stereotype.Component;
+
+@Component
 public class User {
     private String name;
     private String age;
     private Integer sex;
+
+    public User(String name, String age, Integer sex) {
+        this.name = name;
+        this.age = age;
+        this.sex = sex;
+    }
+    public User(){
+        this.name="June";
+        this.age = "十八";
+        this.sex = 1;
+    }
 
     public String getName() {
         return name;
